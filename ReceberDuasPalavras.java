@@ -18,13 +18,15 @@ public class ReceberDuasPalavras {
 
             if (palavra1.length() > palavra2.length()) {
                 System.out.println("A primeira palavra é maior que a segunda");
+                if (palavra1.contains(palavra2)) {
+                    System.out.println("A segunda palavra é uma sub-string da primeira");
+                }
             }
             else {
                 System.out.println("A segunda palavra é maior que a primeira");
             }
             
         }
-    
         scan.close();
     }
 }
