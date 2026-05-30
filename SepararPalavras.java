@@ -7,12 +7,14 @@ public class SepararPalavras {
         System.out.println("Digite uma frase: ");
         String frase = scan.nextLine();
 
-        String[] separacao = frase.split(" "); 
+        String[] separacao = frase.trim().split("\\s+"); 
+
+        System.out.println();
         
+        for (String palavra : separacao) {
+            System.out.println(palavra);
+        }
 
-        System.out.println("As palavras da frase são: " + separacao);
-
-
-        scan.next();
+        scan.close();
     }
 }
